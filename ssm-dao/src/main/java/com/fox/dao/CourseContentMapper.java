@@ -10,8 +10,7 @@ public interface CourseContentMapper {
         根据课程id查询关联的章节信息及章节信息关联的课时信息
      */
     public List<CourseSection> findSectionAndLessonByCourseId(Integer courseId);;;
-    // aaa
-
+    // bbb
     /*
         回显章节对应的课程信息
      */
