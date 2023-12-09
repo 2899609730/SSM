@@ -10,7 +10,7 @@ public interface PromotionAdMapper {
         分页查询广告信息
      */
     public List<PromotionAd> findAllPromotionAdByPage();
-    // 分支代码2用于回退
+    // 主干代码2用于回退
 
     /*
         广告动态上下线
