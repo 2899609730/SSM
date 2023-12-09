@@ -10,7 +10,6 @@ public interface CourseContentMapper {
         根据课程id查询关联的章节信息及章节信息关联的课时信息
      */
     public List<CourseSection> findSectionAndLessonByCourseId(Integer courseId);;;
-    // 本地修改冲突测试
     // 主干修改冲突测试
     // 本地修改6
     /*
