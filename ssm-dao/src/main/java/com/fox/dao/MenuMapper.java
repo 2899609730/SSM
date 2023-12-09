@@ -11,7 +11,7 @@ public interface MenuMapper {
      */
 
     public List<Menu> findSubMenuListByPid(int pid);
-    // 分支代码用于回退
+    // 主干代码用于回退
 
     /*
         查询所有菜单列表
