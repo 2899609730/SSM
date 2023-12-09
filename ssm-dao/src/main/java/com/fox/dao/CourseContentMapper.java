@@ -11,7 +11,7 @@ public interface CourseContentMapper {
      */
     public List<CourseSection> findSectionAndLessonByCourseId(Integer courseId);;;
     // 本地修改3
-    // 本地修改2
+    // 本地修改4
     /*
         回显章节对应的课程信息
      */
