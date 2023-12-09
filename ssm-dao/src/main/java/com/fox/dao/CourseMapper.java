@@ -14,7 +14,7 @@ public interface CourseMapper {
      */
 
     public List<Course> findCourseByCondition(CourseVO courseVO);
-    // 主干修改
+    // 主干修改2
 
     /*
         新增课程信息
