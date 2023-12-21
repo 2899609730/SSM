@@ -49,9 +49,11 @@
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
+                <!-- 构建时将排除的目录，不构建到jar包中 -->
                 <excludes>
                     <exclude>filter/*.properties</exclude>
                 </excludes>
+                <!--是否使用参数值代替参数名。参数值取自properties元素或者文件里配置的属性，文件在filters元素里列出。-->
                 <filtering>true</filtering>
             </resource>
         </resources>
