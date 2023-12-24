@@ -17,6 +17,14 @@
         <property name="url" value="${jdbc.url}"/>
         <property name="username" value="${jdbc.username}"/>
         <property name="password" value="${jdbc.password}"/>
+        <!-- 设置连接池属性 -->
+        <property name="initialSize" value="5"/>
+        <property name="maxActive" value="20"/>
+        <property name="minIdle" value="5"/>
+        <property name="maxWait" value="6000"/>
+        <property name="timeBetweenEvictionRunsMillis" value="60000"/>
+        <property name="minEvictableIdleTimeMillis" value="300000"/>
+        <property name="validationQuery" value="SELECT 1 FROM DUAL"/>
     </bean>
     <!--sqlSessionFactory的创建权交给了spring生产sqlSession-->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">

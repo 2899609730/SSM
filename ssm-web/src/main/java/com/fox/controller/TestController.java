@@ -18,4 +18,8 @@ public class TestController {
     public List<Test> findAllTest() {
         return testService.findAll();
     }
+    @RequestMapping("/test")
+    public String test() {
+        return "test";
+    }
 }
