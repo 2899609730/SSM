@@ -21,7 +21,7 @@
         <maven.compiler.target>8</maven.compiler.target>
         <spring.version>5.1.5.RELEASE</spring.version>
         <springmvc.version>5.1.5.RELEASE</springmvc.version>
-        <mybatis.version>3.5.1</mybatis.version>
+        <mybatis.version>3.5.15</mybatis.version>
     </properties>
     <!--锁定jar版本-->
     <dependencyManagement>
@@ -104,11 +104,11 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.30</version>
         </dependency>
-
+        <!-- https://mvnrepository.com/artifact/com.alibaba/druid -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
-            <version>1.2.11</version>
+            <version>1.2.20</version>
         </dependency>
         <dependency>
             <groupId>org.mybatis</groupId>
