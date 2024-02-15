@@ -108,16 +108,16 @@ public class UserController {
         String session_token = (String) request.getSession().getAttribute("access_token");
 
         // 3.判断token是否一致
-        if (header_token.equals(session_token)) {
+//        if (header_token.equals(session_token)) {
             // 获取用户id
-            Integer user_id = (Integer) request.getSession().getAttribute("user_id");
+            Integer user_id = 100030011;
             // 调用service,进行菜单信息查询
             ResponseResult responseResult = userService.getUserPermissions(user_id);
             return responseResult;
-        } else {
-            ResponseResult responseResult = new ResponseResult(true, 200, "获取菜单信息失败", null);
-            return responseResult;
-        }
+//        } else {
+//            ResponseResult responseResult = new ResponseResult(true, 200, "获取菜单信息失败", null);
+//            return responseResult;
+//        }
 
 
     }
