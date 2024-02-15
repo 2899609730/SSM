@@ -115,7 +115,7 @@ public class UserController {
             ResponseResult responseResult = userService.getUserPermissions(user_id);
             return responseResult;
         } else {
-            ResponseResult responseResult = new ResponseResult(false, 400, "获取菜单信息失败", null);
+            ResponseResult responseResult = new ResponseResult(true, 200, "获取菜单信息失败", null);
             return responseResult;
         }
 
